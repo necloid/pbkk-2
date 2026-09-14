@@ -4,16 +4,12 @@ Aplikasi profil akademis statis berbasis Laravel yang berfokus pada penguasaan i
 
 Dibuat untuk memenuhi tugas mandiri mata kuliah **Pemrograman Berbasis Kerangka Kerja (PBKK)** — Departemen Teknik Informatika, FTEIC, Institut Teknologi Sepuluh Nopember (ITS) Surabaya.
 
----
-
 ## Identitas Mahasiswa
 - **Nama:** Fayza Lathifah Humam
 - **NRP:** 5025241094
 - **Program Studi:** Teknik Informatika
 - **Departemen:** Teknik Informatika — Fakultas Teknologi Elektro dan Informatika Cerdas (FTEIC)
 - **Angkatan:** 2024
-
----
 
 ## Struktur Routing & Grouping (`routes/web.php`)
 
@@ -27,5 +23,20 @@ Seluruh rute profil akademis dibungkus ke dalam **satu grup ber-prefix `dashboar
 | `GET` | `/dashboard/hitung-ipk/{ipk1}/{ipk2}` | `ipk.hitung` | `ipk.blade.php` | Kalkulator IPK otomatis dengan validasi desimal, perhitungan rata-rata, dan validasi rentang (0.00 – 4.00). |
 | `ANY` | `{fallback}` | — | `errors/fallback.blade.php` | Menangani seluruh URL yang tidak terdaftar dengan status HTTP 404. |
 
-Screenshots
-![alt text](image.png)
+## Screenshots
+**Homepage** `/`
+![alt text](/assets/image.png)
+
+**Mahasiswa Profil** `/mahasiswa/5025241094`
+![alt text](/assets/image2.png)
+
+**Agentic AI Idea** `/agent/security`
+![alt text](/assets/image3.png)
+
+**IPK Calculator** `/hitung-ipk/{ipk1}/{ipk2}`
+![alt text](/assets/image4.png)
+
+**Error Fallback** `/{any}`
+![alt text](/assets/image5.png)
+
+
